@@ -25,8 +25,8 @@ const SalesMapping = () => {
           style={{ width: "100%", height: "auto" }}
         >
           <Geographies geography={geoUrl}>
-            {({ geographies }) =>
-              geographies.map((geo) => {
+            {({ geographies }: any) =>
+              geographies.map((geo: any) => {
                 const color = colorMap[geo.properties.name] || "#e2e8f0";
                 return (
                   <Geography 

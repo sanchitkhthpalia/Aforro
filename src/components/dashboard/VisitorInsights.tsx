@@ -46,9 +46,9 @@ const VisitorInsights = () => {
             <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 10, fill: '#94a3b8' }} dx={-10} />
             <Tooltip content={<CustomTooltip />} cursor={{ stroke: '#cbd5e1', strokeWidth: 1, strokeDasharray: '4 4' }} />
             <Legend iconType="square" wrapperStyle={{ fontSize: '12px' }} />
-            <Line type="smooth" dataKey="loyal" name="Loyal Customers" stroke="#a855f7" strokeWidth={3} dot={false} />
-            <Line type="smooth" dataKey="new" name="New Customers" stroke="#ef4444" strokeWidth={3} dot={false} />
-            <Line type="smooth" dataKey="unique" name="Unique Customers" stroke="#22c55e" strokeWidth={3} dot={false} />
+            <Line type="monotone" dataKey="loyal" name="Loyal Customers" stroke="#a855f7" strokeWidth={3} dot={false} />
+            <Line type="monotone" dataKey="new" name="New Customers" stroke="#ef4444" strokeWidth={3} dot={false} />
+            <Line type="monotone" dataKey="unique" name="Unique Customers" stroke="#22c55e" strokeWidth={3} dot={false} />
           </LineChart>
         </ResponsiveContainer>
       </div>

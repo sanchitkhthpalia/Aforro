@@ -32,8 +32,8 @@ const CustomerSatisfaction = () => {
             <XAxis dataKey="name" hide />
             <YAxis hide />
             <Tooltip />
-            <Area type="smooth" dataKey="lastMonth" stroke="#3b82f6" strokeWidth={2} fillOpacity={1} fill="url(#colorLast)" />
-            <Area type="smooth" dataKey="thisMonth" stroke="#10b981" strokeWidth={2} fillOpacity={1} fill="url(#colorThis)" />
+            <Area type="monotone" dataKey="lastMonth" stroke="#3b82f6" strokeWidth={2} fillOpacity={1} fill="url(#colorLast)" />
+            <Area type="monotone" dataKey="thisMonth" stroke="#10b981" strokeWidth={2} fillOpacity={1} fill="url(#colorThis)" />
           </AreaChart>
         </ResponsiveContainer>
       </div>
